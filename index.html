@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Toko Sport</title>
+
+  <!-- Bootstrap CSS (via CDN, bukan download) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* ====== GLOBAL STYLING ====== */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      background: #0d8dfd;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h1, h2, h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    footer {
+      background: #0d6efd;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* ====== REUSABLE CLASSES ====== */
+    .btn-custom {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-primary-custom {
+      background: #0d6efd;
+      color: white;
+    }
+    .btn-primary-custom:hover {
+      background: #084298;
+    }
+
+    .card-custom {
+      background: white;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .card-custom:hover {
+      transform: scale(1.03);
+    }
+
+    .card-custom img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    /* ====== GRID PRODUCT LAYOUT ====== */
+    .produk-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    /* ====== RESPONSIVE ====== */
+    @media (max-width: 768px) {
+      nav {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigasi -->
+  <header>
+    <h1>Toko Sport</h1>
+    <nav>
+      <a href="#beranda">Beranda</a> |
+      <a href="#produk">Produk</a> |
+      <a href="#tentang">Tentang</a> |
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <!-- Beranda -->
+  <section id="beranda">
+    <h2>Selamat Datang di Toko Sport</h2>
+    <p>Kami menyediakan perlengkapan olahraga lengkap dengan kualitas terbaik, desain modern, dan harga bersahabat.</p>
+    <a href="#produk" class="btn-custom btn-primary-custom">Lihat Produk</a>
+  </section>
+
+  <!-- Produk -->
+  <section id="produk">
+    <h2>Produk Kami</h2>
+    <div class="produk-grid">
+
+      <article class="card-custom">
+        <h3>Sepatu Olahraga Nike</h3>
+        <img src="/foto/OIP.webp" alt="Sepatu Nike">
+        <p><b>Ukuran:</b> 38–45</p>
+        <p><b>Harga:</b> Rp 1.250.000</p>
+        <p><b>Warna:</b> Hitam, Putih, Merah, Biru</p>
+      </article>
+
+      <article class="card-custom">
+        <h3>Sepatu Voli</h3>
+        <img src="/foto/OIP (1).webp" alt="Sepatu Voli">
+        <p><b>Ukuran:</b> 38–45</p>
+        <p><b>Harga:</b> Rp 550.000</p>
+        <p><b>Warna:</b> Hitam, Putih, Merah, Biru</p>
+      </article>
+
+      <article class="card-custom">
+        <h3>Sepatu Running</h3>
+        <img src="/foto/id-11134207-7qul9-lfejb8w1sz0y39.jpg" alt="Sepatu Running">
+        <p><b>Ukuran:</b> 38–45</p>
+        <p><b>Harga:</b> Rp 400.000</p>
+        <p><b>Warna:</b> Hitam, Putih, Merah, Biru</p>
+      </article>
+
+      <article class="card-custom">
+        <h3>Training Adidas</h3>
+        <img src="/foto/OIP (2).webp" alt="Baju Adidas">
+        <p><b>Ukuran:</b> SS–XXXL</p>
+        <p><b>Harga:</b> Rp 250.000</p>
+        <p><b>Warna:</b> Hitam, Putih, Merah</p>
+      </article>
+
+      <article class="card-custom">
+        <h3>Jersey Voli</h3>
+        <img src="/foto/f9f7ea833a7daf8f038b78e207b226f0.jpg" alt="Jersey Voli">
+        <p><b>Ukuran:</b> SS–XXXL</p>
+        <p><b>Harga:</b> Rp 150.000</p>
+        <p><b>Warna:</b> Custom</p>
+      </article>
+
+      <article class="card-custom">
+        <h3>Bola Futsal Puma</h3>
+        <img src="/foto/OIP.jpg" alt="Bola Puma">
+        <p><b>Ukuran:</b> Standar Internasional</p>
+        <p><b>Harga:</b> Rp 300.000</p>
+        <p><b>Warna:</b> Putih, Oranye</p>
+      </article>
+
+      <article class="card-custom">
+        <h3>Bola Voli</h3>
+        <img src="/foto/R.jpg" alt="Bola Voli">
+        <p><b>Ukuran:</b> Standar Internasional</p>
+        <p><b>Harga:</b> Rp 300.000</p>
+        <p><b>Warna:</b> Biru, Kuning</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Tentang Kami -->
+  <section id="tentang">
+    <h2>Tentang Kami</h2>
+    <p>Toko Sport adalah usaha lokal yang menjual perlengkapan olahraga dari berbagai merek terkenal dengan harga terjangkau dan kualitas terjamin.</p>
+    <p>Kami menyediakan berbagai macam produk mulai dari sepatu, baju training, serta peralatan olahraga seperti bola.</p>
+    <p>Selain itu, kami juga menawarkan banyak pilihan ukuran lengkap (SS–XXXL untuk baju dan 38–45 untuk sepatu) serta variasi warna menarik.</p>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak">
+    <h2>Kontak</h2>
+    <p>Email: tokosport@gmail.com</p>
+    <p>Telepon: +62 813-5140-3524</p>
+    <p>Instagram: @toko.sport</p>
+    <p>Alamat: Jl. Pramuka Blok B, Samarinda</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Toko Sport | Referensi: <a href="https://www.planetsports.asia/" target="_blank">Planet Sports</a></p>
+  </footer>
+
+</body>
+</html>
