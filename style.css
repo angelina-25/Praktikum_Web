@@ -1,8 +1,32 @@
+body.dark-mode {
+  background: #1e1e1e;
+  color: #f1f1f1;
+}
+
+body.dark-mode header {
+  background: #333;
+  color: #ffdd57;
+}
+
+body.dark-mode nav a {
+  color: #ffdd57;
+}
+
+body.dark-mode .card {
+  background: #2c2c2c;
+  color: #ffffff;
+}
+
+body.dark-mode footer {
+  background: #222;
+  color: #aaa;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f8f9fa;
+  background: #f8f9fa78;
   color: #333;
 }
 
@@ -54,7 +78,7 @@ h2 {
 }
 
 .card {
-  background: white;
+  background: #ffffff50;
   border-radius: 12px;
   padding: 1rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -125,4 +149,28 @@ footer a:hover {
   section {
     padding: 1rem;
   }
+}
+
+.search-box {
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.card button {
+  margin-top: 10px;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #09a9ff;
+  color: rgb(255, 255, 255);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  background: #084298;
 }
